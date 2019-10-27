@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Динара Андрианова](https://up.htmlacademy.ru/adaptive/17/user/90549).
-* Наставник: [Александр Горбачев](https://htmlacademy.ru/profile/id92028).
+* Студент: [Александр Рябуха].
+* Наставник: [Александр Горбачев].
 
 ---
 
