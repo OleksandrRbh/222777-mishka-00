@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Mishka - Вязание на заказ</title>
+</head>
+<body>
+
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="http://placehold.it/86x35" alt="Mishka">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#">Каталог</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Поиск по сайту</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+
+    <section class="heading heading--catalog">
+      <h1 class="page-main__title">Вязание на заказ</h1>
+    </section>
+    
+    <section class="form-container">
+      <p class="form-container__lead-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="order-form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="order-form__fieldset">
+          <span class="order-form__fieldname">Тип</span>
+          <input class="order-form__radio" type="radio" name="type" id="interior" checked>
+          <label class="order-form__radio-label" for="interior">Аксессуар для интерьера</label>
+          <input class="order-form__radio" type="radio" name="type" id="toys">          
+          <label class="order-form__radio-label" for="toys">Детская игрушка</label>
+        </fieldset>
+        <fieldset class="order-form__fieldset">
+          <span class="order-form__fieldname">Цвет</span>
+          <input class="order-form__checkbox" type="checkbox" name="color-white" id="color-white" checked>
+          <label class="order-form__checkbox-label" for="color-white">Белый</label>
+          <input class="order-form__checkbox" type="checkbox" name="color-gray" id="color-gray" checked>
+          <label class="order-form__checkbox-label" for="color-gray">Серый</label>
+          <input class="order-form__checkbox" type="checkbox" name="color-tiffany" id="color-tiffany">
+          <label class="order-form__checkbox-label" for="color-tiffany">«Тиффани»</label>
+          <input class="order-form__checkbox" type="checkbox" name="color-black" id="color-black">
+          <label class="order-form__checkbox-label" for="color-black">Черный</label>
+          <input class="order-form__checkbox" type="checkbox" name="color-pink" id="color-pink">
+          <label class="order-form__checkbox-label" for="color-pink">Розовый</label>
+          <input class="order-form__checkbox" type="checkbox" name="color-orange" id="color-orange">
+          <label class="order-form__checkbox-label" for="color-orange">Оранжевый</label>
+        </fieldset>
+        <fieldset class="order-form__fieldset">
+          <span class="order-form__fieldname">ФИО</span>          
+          <label class="order-form__text-label" for="name">Имя:</label>
+          <input class="order-form__text-input" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+          <label class="order-form__text-label" for="patronymic">Отчество:</label>
+          <input class="order-form__text-input" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
+          <label class="order-form__text-label" for="surname">Фамилия:</label>
+          <input class="order-form__text-input" type="text" name="surname" id="surname" placeholder="Введите фамилию*" required>
+        </fieldset>
+        <fieldset class="order-form__fieldset">
+          <span class="order-form__fieldname">Тел</span>
+          <input class="order-form__tel-input" type="tel" name="tel" id="tel" pattern="+[7]{1} [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+        </fieldset>
+        <fieldset class="order-form__fieldset">
+          <span class="order-form__fieldname">E-mail</span>
+          <input class="order-form__e-mail-input" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*" required>
+        </fieldset>
+        <fieldset class="order-form__fieldset">
+          <span class="order-form__fieldname">Доп</span>
+          <textarea class="order-form__details" name="details" id="details" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </fieldset>
+        <p class="order-form__remark">*Поля обязательны для заполнения</p>
+        <button class="button" type="submit">Отправить заказ</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://vk.com/htmlacademy">Мы в Инстаграме</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://www.instagram.com/htmlacademy">Мы в Твиттере</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+        <img class="copyright__img" src="http://placehold.it/27x34" alt="HTML Academy">
+      </a>
+    </div>
+  </footer>
+
+  <section class="modal modal--to-cart">
+    <h2 class="modal--to-cart__title">Добавить в корзину</h2>
+    <p class="modal--to-cart__lead">Выберите размер:</p>
+    <form action="https://echo.htmlacademy.ru" method="get" class="size-select">
+      <input class="modal--to-cart__radio" type="radio" id="size-s" name="size" checked>
+      <input class="modal--to-cart__radio" type="radio" id="size-m" name="size">
+      <input class="modal--to-cart__radio" type="radio" id="size-l" name="size">
+      <label class="modal--to-cart__label" for="size-s">s</label>
+      <label class="modal--to-cart__label" for="size-m">m</label>
+      <label class="modal--to-cart__label" for="size-l">l</label>
+      <button class="button modal--to-cart__button" type="submit">Добавить</button>
+    </form>
+  </section>
+
+</body>
+</html>    
