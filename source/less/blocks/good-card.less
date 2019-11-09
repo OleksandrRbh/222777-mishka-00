@@ -7,6 +7,7 @@
 }
 
 .good-card__image-wrapper {
+  background-color: #ededed;
   display: block;
   width: 260px;
   height: 195px;
@@ -50,5 +51,61 @@
   font-weight: 700;
 }
 
+@media (min-width: 768px) {
+  .good-card {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 54px;
+    width: 668px;
+    min-height: 334px;
+  }  
 
+  .good-card__image-wrapper {
+    width: 334px;
+    min-height: 334px;
+  }
 
+  .good-card__description {
+    width: 334px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .good-card__name {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .good-card__parameters {
+    font-size: 15px;
+  }
+
+  .good-card__buy-area {
+    margin-top: auto;
+  }
+
+  .good-card__price {
+    font-size: 17px;
+  }
+
+}
+
+@media (min-width: 1150px) {
+  .good-card {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    width: 315px;    
+  }
+
+  .good-card__image-wrapper {
+    width: 315px;
+    min-height: 462px;
+  }
+
+  .good-card__description {
+    width: 315px;
+    min-height: 205px;
+    box-sizing: border-box;    
+  }
+}

@@ -71,9 +71,48 @@
   background-image: url("../../img/icon-6_about-us.png");
 }
 
+@media (min-width: 768px) {
+  .about-us {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
 
+  .about-us__heading {  
+    margin-bottom: 46px;  
+    font-size: 43px;
+    line-height: 50px;
+  }
 
+  .about-us__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
 
+  .about-us__list-item {
+    width: 330px;
+    font-size: 20px;
+    line-height: 22px;    
+  }  
+}
 
+@media (min-width: 1150px) {
+  .about-us {
+    padding-left: 175px;
+  }
 
+  .about-us__heading {    
+    font-size: 53px;
+    line-height: 57px;
+  }
 
+  .about-us__list {
+    justify-content: flex-start;
+  }
+
+  .about-us__list-item {
+    width: 350px;       
+  }
+}

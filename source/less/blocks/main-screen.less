@@ -6,7 +6,7 @@
   justify-content: space-between;
   box-sizing: border-box;
   min-height: 489px;
-  background-color: #ffffff;
+  background-color: #f1f1f1;
   background-image: url("../../img/hero-mobile.jpg");
   background-repeat: no-repeat;
 }
@@ -20,4 +20,27 @@
   font-size: 27px;
   font-weight: 700;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .main-screen {
+    min-height: 745px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .main-screen__lead-text {
+    margin-top: 140px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+}
+
+@media (min-width: 1150px) {
+  .main-screen__lead-text {    
+    font-size: 53px;
+    line-height: 57px;
+  }
+
 }
