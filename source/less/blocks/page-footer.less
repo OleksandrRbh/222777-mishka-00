@@ -20,6 +20,22 @@
   border-bottom: 1px solid #e5e5e5;
 }
 
+.social__item {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.social__link {
+
+  &:hover .social-svg {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .page-footer__copyright {
   display: flex;
   justify-content: center;
@@ -34,6 +50,26 @@
   line-height: 18px;
 }
 
+.copyright__svg {
+  fill: #63d1bb;
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+  margin-left: -80px;
+
+  &:hover .copyright__svg {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: 768px) {
   .page-footer {
     display: flex;
@@ -46,6 +82,14 @@
 
   .page-footer__logo {
     display: block;
+    
+    &:hover .logo-footer {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .page-footer__social {
